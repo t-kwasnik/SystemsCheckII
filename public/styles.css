@@ -1,0 +1,107 @@
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background:url("background.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  min-width: 700px;
+  min-height: 400px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.top_bar {
+  color: white;
+}
+
+.header_entry:hover {
+  box-shadow: 0 0 20px white;}
+
+.score {
+  width:60px;
+  margin:0px;
+  display: inline-block;
+}
+
+.team_info{
+  font-family: Verdana;
+  display: inline-block;
+  background: rgba(255,255,255,.9);
+  height: 281px;
+  width: 40%;
+  float: right;
+  margin: 10px 5px 0px 0px;
+  padding: 2px 15px;
+  border-radius: 5px;
+}
+
+.summary {
+  display: inline-block;
+  width: 52%;
+  float: left;
+  min-width: 350px;
+}
+
+.team_entry {
+  font-family: Verdana;
+  height: 45px;
+  margin:15px auto;
+  background: rgba(57,60,61,.9);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.header_entry {
+  font-family: Verdana;
+  color: white;
+  height: 45px;
+  margin:10px auto;
+  background: black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.team_entry:hover {
+  background: rgba(57,60,61,0.8);
+  box-shadow: 0 0 20px cyan;
+}
+
+.team {
+  color: white;
+  padding: 5px;
+  margin: 4px 0px 4px 20px;
+  font-size: 14pt;
+  display: inline-block;
+  width:  100px;
+}
+
+.header {
+  text-align: center;
+  width:  10px;
+  height: 20px;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 10px;
+  margin: 2px 0px 2px 30px;
+
+}
+
+.stat {
+  border: 1px solid black;
+  background: white;
+  width:  10px;
+  height: 20px;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 5px;
+  margin: 2px 0px 2px 50px;
+
+}
+

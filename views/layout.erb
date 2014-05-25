@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title >Game Time</title>
+
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+  <body>
+  <div class = "summary">
+    <a href = "http://localhost:4567/leaderboard" class = "top_bar">
+      <div class = "header_entry">
+        <div class = "team"></div><b><div class = "header">Wins</div><div class = "header">Losses</div></b>
+      </div>
+    </a>
+
+    <% @leaderboard.each do |team| %>
+      <a href = "http://localhost:4567/teams/<%=team[0]%>">
+        <div class = "team_entry">
+           <div class = "team"><%= team[0] %></div> <div class = "stat"><%= team[1][:total_wins] %></div><div class = "stat"><%= team[1][:total_losses] %></div>
+        </div>
+      </a>
+    <% end %>
+  </div>
+    <%= yield %>
+  </body>
+</html>

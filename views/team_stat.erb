@@ -1,0 +1,12 @@
+<div class="team_info">
+  <h1><%= @selected_team[0] %></h1>
+  <span>Wins: <b><%= @selected_team[1][:total_wins]%></b></span><br><br>
+  <% @team_games.each do |game| %>
+    <span><%= "<b><div class = \"score\">#{game[:score]}</div></b> vs #{game[:opponent]}&nbsp;&nbsp;&nbsp;<em>#{game[:location]}</em><br>" if game[:outcome] == "win" %></span>
+  <% end %><br><br>
+
+  <span>Losses: <b><%= @selected_team[1][:total_losses]%></b></span><br><br>
+    <% @team_games.each do |game| %>
+    <span><%= "<b><div class = \"score\">#{game[:score]}</div></b> vs #{game[:opponent]}&nbsp;&nbsp;&nbsp;<em>#{game[:location]}</em><br>" if game[:outcome] == "loss" %></span>
+  <% end %>
+</div>
